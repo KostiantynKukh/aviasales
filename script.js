@@ -232,7 +232,7 @@ formSearch.addEventListener('submit', (event) => {
         to: city.find(item => inputCitiesTo.value === item.name),
         when: inputDateDepart.value
     }
-
+    
     if (formData.from && formData.to) {
     const requestData = `?depart_date=${formData.when}&origin=${formData.from.code}&destination=${formData.to.code}&one_way=true`;
     
